@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="linfenliu">
   <meta name="keywords" content="">
-  <title>My First Post - Lin</title>
+  <title>markdown语法 - Lin</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      0 字
+      236 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -217,15 +217,87 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">My First Post</h1>
+            <h1 style="display: none">markdown语法</h1>
             
             <div class="markdown-body" id="post-body">
-              
+              <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><blockquote>
+<p>源码:<br>  <code># 一级标题</code><br>  <code>## 二级标题</code><br>  <code>### 三级标题</code><br>  <code>#### 四级标题</code><br>  <code>##### 五级标题</code><br>  <code>###### 六级标题</code></p>
+<p>效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><blockquote>
+<p>源码：<br>  <code>* 无序列表1</code><br>  <code>* 无序列表2</code><br>  <code>1. 有序列表1</code><br>  <code>2. 有序列表2</code></p>
+<p>效果：</p>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2</li>
+</ul>
+<ol>
+<li>有序列表1</li>
+<li>有序列表2</li>
+</ol>
+</blockquote>
+<h1 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h1><blockquote>
+<p>源码：<br>  <code>&gt; 区块引用的内容</code></p>
+<p>效果：</p>
+<blockquote>
+<p>区块引用的内容</p>
+</blockquote>
+</blockquote>
+<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><blockquote>
+<p>源码：<br>  <code>---</code></p>
+<p>效果：</p>
+<hr>
+</blockquote>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><blockquote>
+<p>源码：<br>  <code>[百度](http://baidu.com/)</code></p>
+<p>效果：<br><a target="_blank" rel="noopener" href="http://baidu.com/">百度</a></p>
+</blockquote>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><blockquote>
+<p>源码：<br>  <code>![图片](./blog/img/favicon.png)</code></p>
+<p>效果：<br><img src="./blog/img/favicon.png" srcset="/blog/img/loading.gif" alt="图片"></p>
+</blockquote>
+<h1 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h1><blockquote>
+<p>源码：</p>
+<ul>
+<li>单行代码:<code>`return 0;`</code></li>
+<li>多行代码:<pre><code class="hljs angelscript">```
+<span class="hljs-built_in">int</span> a = <span class="hljs-number">3</span>;
+<span class="hljs-built_in">int</span> b = <span class="hljs-number">4</span>;
+```</code></pre>
+效果：<br><code>return 0;</code><pre><code class="hljs angelscript"><span class="hljs-built_in">int</span> a = <span class="hljs-number">3</span>;
+<span class="hljs-built_in">int</span> b = <span class="hljs-number">4</span>;</code></pre>
+</li>
+</ul>
+</blockquote>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
+<p>源码：</p>
+<pre><code class="hljs elixir">| name | age | sex  |
+|<span class="hljs-symbol">:----</span><span class="hljs-symbol">:|</span><span class="hljs-symbol">:----|-----</span><span class="hljs-symbol">:|</span>
+| xxxx | <span class="hljs-number">100</span> | male |</code></pre>
+
+<p>效果：<br>| name | age | sex  |<br>|:—-:|:—-|—–:|<br>| xxxx | 100 | male |</p>
+</blockquote>
+<h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><blockquote>
+<p>源码：</p>
+<pre><code class="hljs asciidoc">*<span class="hljs-strong">*字体加粗*</span><span class="hljs-strong">*</span>
+<span class="hljs-strong">*</span>字体倾斜<span class="hljs-strong">*</span>
+<span class="hljs-strong">~~字体删除~~</span></code></pre>
+
+<p>效果：<br><strong>字体加粗</strong><br><em>字体倾斜</em><br><del>字体删除</del></p>
+</blockquote>
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/blog/tags/markdown/">markdown</a>
+                    
+                  </div>
                 
               </div>
               
@@ -239,12 +311,6 @@
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/blog/2020/09/29/hello-world/">
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
@@ -384,7 +450,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "My First Post&nbsp;",
+        "markdown语法&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
