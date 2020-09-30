@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="linfenliu">
   <meta name="keywords" content="">
-  <title>mathjax语法 - Lin</title>
+  <title>mathjax常用语法 - Lin</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -167,7 +167,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3 字
+      528 字
     </span>
   
 
@@ -177,7 +177,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      8
        分钟
     </span>
   
@@ -207,16 +207,175 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">mathjax语法</h1>
+            <h1 style="display: none">mathjax常用语法</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：1 小时前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <p>$x&lt;y$</p>
+              <h1 id="呈现位置"><a href="#呈现位置" class="headerlink" title="呈现位置"></a>呈现位置</h1><ul>
+<li><p>嵌入文字：用<script type="math/tex">...</script>定义</p>
+<blockquote>
+<p>源码：<script type="math/tex">\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t</script><br>效果：$\sum<em>{i=0}^N\int</em>{a}^{b}g(t,i)\text{d}t$</p>
+</blockquote>
+</li>
+<li><p>单独占行：用$$$…$$$定义</p>
+<blockquote>
+<p>源码：<script type="math/tex">$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$$
+效果：</script>\sum<em>{i=0}^N\int</em>{a}^{b}g(t,i)\text{d}t$$</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><ul>
+<li>起始标记<code>\begin&#123;matrix&#125;</code>，结束标记<code>\end&#123;matrix&#125;</code></li>
+<li>每一行末尾标记<code>\\</code>，行间元素之间以<code>&amp;</code>分隔；<blockquote>
+<p>源码：</p>
+<pre><code class="hljs angelscript">$$\begin&#123;bmatrix&#125;
+<span class="hljs-number">1</span>&amp;<span class="hljs-number">0</span>&amp;<span class="hljs-number">0</span>\\
+<span class="hljs-number">0</span>&amp;<span class="hljs-number">1</span>&amp;<span class="hljs-number">0</span>\\
+<span class="hljs-number">0</span>&amp;<span class="hljs-number">0</span>&amp;<span class="hljs-number">1</span>\\
+\end&#123;bmatrix&#125;$$</code></pre>
+<p>效果：</p>
+<script type="math/tex; mode=display">\begin{bmatrix}
+1&0&0\\
+0&1&0\\
+0&0&1\\
+\end{bmatrix}</script></blockquote>
+</li>
+</ul>
+<h1 id="方程组"><a href="#方程组" class="headerlink" title="方程组"></a>方程组</h1><ul>
+<li>起始标记<code>\begin&#123;cases&#125;</code>，结束标记<code>\end&#123;cases&#125;</code></li>
+<li>每一行末尾标记<code>\\</code>；<blockquote>
+<p>源码：</p>
+<pre><code class="hljs latex"><span class="hljs-formula">$$<span class="hljs-tag">\<span class="hljs-name">begin</span><span class="hljs-string">&#123;cases&#125;</span></span></span>
+<span class="hljs-formula">a_1x+b_1y+c_1z=d_1<span class="hljs-tag">\<span class="hljs-name">\</span></span></span>
+<span class="hljs-formula">a_2x+b_2y+c_2z=d_2<span class="hljs-tag">\<span class="hljs-name">\</span></span></span>
+<span class="hljs-formula">a_3x+b_3y+c_3z=d_3<span class="hljs-tag">\<span class="hljs-name">\</span></span></span>
+<span class="hljs-formula"><span class="hljs-tag">\<span class="hljs-name">end</span><span class="hljs-string">&#123;cases&#125;</span></span>$$</span></code></pre>
+<script type="math/tex; mode=display">\begin{cases}
+a_1x+b_1y+c_1z=d_1\\
+a_2x+b_2y+c_2z=d_2\\
+a_3x+b_3y+c_3z=d_3\\
+\end{cases}</script></blockquote>
+</li>
+</ul>
+<h1 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h1><blockquote>
+<ul>
+<li>需要大写希腊字母，只需要把源码<strong>字母开头大写</strong>;</li>
+<li>需要斜体希腊字母，只需要在源码前加上<strong>var</strong>;</li>
+</ul>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">源码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">源码</th>
+<th style="text-align:center">显示</th>
+<th style="text-align:center">源码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$\alpha$</td>
+<td style="text-align:center">\alpha</td>
+<td style="text-align:center">$\beta$</td>
+<td style="text-align:center">\beta</td>
+<td style="text-align:center">$\gamma$</td>
+<td style="text-align:center">\gamma</td>
+</tr>
+<tr>
+<td style="text-align:center">$\delta$</td>
+<td style="text-align:center">\delta</td>
+<td style="text-align:center">$\epsilon$</td>
+<td style="text-align:center">\epsilon</td>
+<td style="text-align:center">$\zeta$</td>
+<td style="text-align:center">\zeta</td>
+</tr>
+<tr>
+<td style="text-align:center">$\eta$</td>
+<td style="text-align:center">\eta</td>
+<td style="text-align:center">$\theta$</td>
+<td style="text-align:center">\theta</td>
+<td style="text-align:center">$\iota$</td>
+<td style="text-align:center">\iota</td>
+</tr>
+<tr>
+<td style="text-align:center">$\kappa$</td>
+<td style="text-align:center">\kappa</td>
+<td style="text-align:center">$\lambda$</td>
+<td style="text-align:center">\lambda</td>
+<td style="text-align:center">$\mu$</td>
+<td style="text-align:center">\mu</td>
+</tr>
+<tr>
+<td style="text-align:center">$\nu$</td>
+<td style="text-align:center">\nu</td>
+<td style="text-align:center">$\xi$</td>
+<td style="text-align:center">\xi</td>
+<td style="text-align:center">$\pi$</td>
+<td style="text-align:center">\pi</td>
+</tr>
+<tr>
+<td style="text-align:center">$\rho$</td>
+<td style="text-align:center">\rho</td>
+<td style="text-align:center">$\sigma$</td>
+<td style="text-align:center">\sigma</td>
+<td style="text-align:center">$\tau$</td>
+<td style="text-align:center">\tau</td>
+</tr>
+<tr>
+<td style="text-align:center">$\upsilon$</td>
+<td style="text-align:center">\upsilon</td>
+<td style="text-align:center">$\phi$</td>
+<td style="text-align:center">\phi</td>
+<td style="text-align:center">$\chi$</td>
+<td style="text-align:center">\chi</td>
+</tr>
+<tr>
+<td style="text-align:center">$\psi$</td>
+<td style="text-align:center">\psi</td>
+<td style="text-align:center">$\omega$</td>
+<td style="text-align:center">\omega</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="字母修饰"><a href="#字母修饰" class="headerlink" title="字母修饰"></a>字母修饰</h1><ul>
+<li>上标：<code>^</code>，源码<script type="math/tex">a^2</script>，效果$a^2$；</li>
+<li>下表:<code>_</code>，源码<script type="math/tex">a_2</script>，效果$a_2$；</li>
+<li>矢量：<code>\vec(短)或\overrightarrow(长)</code>，源码<script type="math/tex">\overrightarrow {AB}</script>，效果$\overrightarrow {AB}$；</li>
+</ul>
+<h1 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h1><ul>
+<li>同级别内容：<code>10^&#123;10&#125;</code>，效果:$10^{10}$；</li>
+</ul>
+<h1 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h1><ul>
+<li>小括号：<code>()</code>，效果：$(123)$；</li>
+<li>中括号：<code>[]</code>，效果：$[123]$</li>
+<li>尖括号：<code>\langle, \rangle</code>，效果：$\langle a,b \rangle$;</li>
+<li>自动匹配大小：<code>\left(  \right)</code>或<code>\left[  \right]</code>，效果：$\left[ 123 \right]$</li>
+</ul>
+<h1 id="求和、极限、积分、分式、根式"><a href="#求和、极限、积分、分式、根式" class="headerlink" title="求和、极限、积分、分式、根式"></a>求和、极限、积分、分式、根式</h1><ul>
+<li>求和：<code>\sum_&#123;i=1&#125;^n&#123;a_i&#125;</code>,效果：$\sum_{i=1}^n{a_i}$;</li>
+<li>极限：<code>\lim_&#123;x\to 0&#125;</code>，效果：$\lim_{x\to 0}$；</li>
+<li>积分：<code>\int_0^\infty&#123;fxdx&#125;</code>，效果：$\int_0^\infty{fxdx}$；</li>
+<li>分式：<code>\frac&#123;a&#125;&#123;b&#125;</code>，效果：$\frac{a}{b}$；</li>
+<li>根式：<code>\sqrt[x]&#123;y&#125;</code>，效果：$\sqrt[x]{y}$；</li>
+</ul>
+<h1 id="特殊函数"><a href="#特殊函数" class="headerlink" title="特殊函数"></a>特殊函数</h1><ul>
+<li><code>\sin x，\ln x，\max(A,B,C)</code>，效果：$\sin x，\ln x，\max(A,B,C)$；</li>
+</ul>
+<h1 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h1><ul>
+<li><code>\</code>，单独一个空格；</li>
+<li><code>\quad</code>，连续四个空格；</li>
+</ul>
 
             </div>
             <hr>
@@ -446,7 +605,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "mathjax语法&nbsp;",
+        "mathjax常用语法&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
