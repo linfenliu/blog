@@ -211,7 +211,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：37 分钟前
+                  本文最后更新于：39 分钟前
                 
               </p>
             
@@ -346,10 +346,10 @@
         var gitalk = new Gitalk({
           clientID: 'b0665a837017a03b030b',
           clientSecret: '0e57949100972056cf948faf39b60d6f518ddbf0',
-          repo: 'https://github.com/linfenliu/blog-comments.git',
+          repo: 'blog-comments.git',
           owner: 'linfenliu',
           admin: ["linfenliu"],
-          id: md5(),
+          id: md5(location.href),
           language: 'zh-CN',
           labels: ["Gitalk"],
           perPage: 10,
