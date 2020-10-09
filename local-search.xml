@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>hexo博客基础</title>
+    <link href="/blog/2020/10/09/hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80/"/>
+    <url>/blog/2020/10/09/hexo%E5%8D%9A%E5%AE%A2%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<ul><li>新建文章<br><code>hexo new &quot;title&quot; //创建title文章</code></li><li>格式指引<pre><code class="hljs yaml"><span class="hljs-meta">---</span><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span>          <span class="hljs-string">//</span> <span class="hljs-string">文章名称</span><span class="hljs-attr">date:</span> <span class="hljs-number">2013</span><span class="hljs-string">/7/13</span> <span class="hljs-number">20</span><span class="hljs-string">:46:25</span>    <span class="hljs-string">//</span> <span class="hljs-string">日期</span><span class="hljs-attr">tags:</span> <span class="hljs-string">hello</span>                 <span class="hljs-string">//</span> <span class="hljs-string">标签</span><span class="hljs-attr">comments:</span> <span class="hljs-literal">true</span>              <span class="hljs-string">//</span> <span class="hljs-string">开启评论</span><span class="hljs-attr">math:</span> <span class="hljs-literal">true</span>                  <span class="hljs-string">//</span> <span class="hljs-string">开启公式</span><span class="hljs-meta">---</span></code></pre></li><li>清除已生成的缓存和静态文件<br><code>hexo clean</code></li><li>生成静态文件<br><code>hexo g</code></li><li>部署静态文件到站点<br><code>hexo d</code></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>mathjax常用语法</title>
     <link href="/blog/2020/09/30/mathjax%E8%AF%AD%E6%B3%95/"/>
     <url>/blog/2020/09/30/mathjax%E8%AF%AD%E6%B3%95/</url>
